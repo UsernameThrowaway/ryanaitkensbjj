@@ -1,0 +1,175 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Achievements | Ryan Aitkens</title>
+  <link rel="shortcut icon" type="image/jpg" href="triangle.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+<style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    body {
+      margin: 0;
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f4f4f4;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.1rem;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #e50914;
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      text-align: center;
+      color: #e50914;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    .achievement {
+      display: flex;
+      align-items: center;
+      background-color: #1a1a1a;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      overflow: hidden;
+    }
+    .achievement img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      background: #333;
+    }
+    .achievement-info {
+      padding: 1.2rem;
+      flex: 1;
+    }
+    .achievement-info h2 {
+      margin: 0 0 0.5rem;
+      color: #ffcc00;
+    }
+    .achievement-info p {
+      margin: 0;
+      color: #ccc;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    
+  </nav>
+  <div class="container">
+    <h1>Major Achievements</h1>
+    <div class="achievement">
+
+      <img src="ibjjf.png"  />
+      <div class="achievement-info">
+        <h2>IBJJF 2017 semi finalist</h2>
+        <p>2017 Pans semi-finalist via submission at the 2017 IBJJF Atlanta Open.</p>
+      </div>
+
+    </div>
+
+    <div class="achievement">
+      <img src="ufc.png"  />
+      <div class="achievement-info">
+        <h2>Compete in UFC BJJ Fight pass</h2>
+        <p>Secured a victory over Gabriel Almeida.</p>
+      </div>
+
+    </div>
+
+    <div class="achievement">
+      <img src="pgf.png"  />
+      <div class="achievement-info">
+        <h2>PGF season 7 champion</h2>
+        <p>Aitken emerged victorious in the 205 lb division of the Professional Grappling Federation's seventh season.</p>
+      </div>
+
+    </div>
+    <div class="achievement">
+      <img src="adcc.png"  />
+      <div class="achievement-info">
+        <h2>ADCC open championship winner</h2>
+        <p>He won gold at the ADCC Chicago Open and silver at the ADCC Denver Open in 2023.</p>
+      </div>
+
+    </div>
+    <div class="achievement">
+      <img src="blackbelt.jpg" alt="Black Belt Promotion" />
+      <div class="achievement-info">
+        <h2>Earned BJJ Black Belt (2022)</h2>
+        <p>Awarded by Sean Applegate under the 10th Planet system after years of training and competition.</p>
+      </div>
+
+    </div>
+    <div class="achievement">
+      <img src="boss grappling.png"/>
+      <div class="achievement-info">
+        <h2>Boss Grappling Invitational II </h2>
+        <p>Invited to one of America's top pro grappling shows.</p>
+      </div>
+    </div>
+  </div>
+
+
+<audio id="myAudio" src="cantstop.mp3" autoplay loop></audio>
+<script>
+  const audio = document.getElementById("myAudio");
+  audio.volume = 0.5; // Adjust volume (0.0 to 1.0)
+  audio.play().catch(error => {
+    console.error("Autoplay prevented:", error);
+  });
+</script>
+
+
+  <footer>
+    &copy; 2025 Larrynoel. All Rights Reserved.
+  </footer>
+</body>
+</html>

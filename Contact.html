@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Ryan Aitken</title>
+  <link rel="shortcut icon" type="image/jpg" href="triangle.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    body {
+      margin: 0;
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f4f4f4;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.1rem;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #e50914;
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .content {
+      padding: 3rem 1rem;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .headshot {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 16px #e50914;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    .headshot:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 28px #e50914, 0 0 40px #f44336;
+    }
+    .instagram-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+    .instagram-link img {
+      width: 80px;
+      height: 80px;
+      border-radius: 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 0.5rem;
+      object-fit: contain;
+    }
+    .instagram-link:hover img {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #e50914, 0 0 30px #f44336;
+    }
+    .instagram-link span {
+      font-size: 1rem;
+      color: #f4f4f4;
+    }
+    .email-notice {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .email-notice a {
+      color: #e50914;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .email-notice a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="achievement.html">Achievements</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>CONTACT</h1>
+
+  <div class="content">
+    <img src="headshot.png" alt="Ryan Aitken Headshot" class="headshot" />
+
+    <a href="https://www.instagram.com/ryanaitken10p" target="_blank" class="instagram-link">
+      <img src="icon.png" alt="Instagram" />
+      <span>@ryanaitken10p</span>
+    </a>
+
+    <div class="email-notice">
+      For inquiries, please contact Ryan’s affiliate gym:<br />
+      <strong>10th Planet Bath Jiu Jitsu</strong><br />
+      Email: <a href="mailto:dokkodomartialartsllc@gmail.com">dokkodomartialartsllc@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Larrynoel. All Rights Reserved.
+  </footer>
+
+  
+</body>
+</html>

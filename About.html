@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Ryan Aitkens</title>
+  <link rel="shortcut icon" type="image/jpg" href="triangle.jpg" />
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #f4f4f4;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    header {
+      background: radial-gradient(circle, #111 0%, #000 100%);
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      color: #e50914;
+      font-size: 3rem;
+      margin: 0.2rem 0;
+      letter-spacing: 2px;
+    }
+
+    header h2 {
+      color: #f2c94c;
+      font-weight: normal;
+      font-size: 1.3rem;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #e50914;
+      bottom: -4px;
+      left: 0;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #e50914;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #ddd;
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+
+    .bio img {
+      display: block;
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    }
+
+    .stats, .submissions {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .stats img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .submissions table {
+      margin: auto;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .submissions td {
+      padding: 1.5rem;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    .submissions img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .submissions img:hover {
+      transform: scale(1.05);
+    }
+
+    .submissions p {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #f2c94c;
+    }
+
+    .Facts img {
+      width: 200px;
+      border-radius: 12px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .Facts p {
+      text-align: justify;
+      color: #ddd;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .Record {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .Record h2 {
+      color: #e50914;
+      font-size: 1.8rem;
+    }
+
+    .Record-image {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ryan Aitkens</h1>
+    <h2>TECHNICAL • RELENTLESS • COMPOSED</h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="achievement.html">Achievements</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2 class="section-title">His Story</h2>
+    <div class="bio">
+      <p>Ryan Aitkens is a prominent American Brazilian Jiu-Jitsu (BJJ) black belt, born on October 12, 1993, in Marietta, Georgia.</p>
+      <p>He began his martial arts journey at 15, initially exploring kickboxing before transitioning to BJJ under Eddie Camden.</p>
+      <p>After gaining experience in MMA and competing in the gi circuit with Alliance Atlanta, Aitkens shifted his focus to no-gi grappling, training under Sean Applegate at 10th Planet Atlanta.</p>
+      <p>He earned his black belt in December 2022, and continues to make a name for himself on the international stage.</p>
+      <img src="collage.jpg" alt="Ryan Aitkens Journey Collage">
+    </div>
+
+    <div class="stats">
+      <h2 class="section-title">Stats</h2>
+      <img src="stat.png" alt="Ryan Aitkens Stats">
+    </div>
+
+    <div class="submissions">
+      <h2 class="section-title">Favorite Submission Moves</h2>
+      <table>
+        <tr>
+          <td>
+            <img src="heelhook.png" alt="Heelhook">
+            <p>Heelhook</p>
+          </td>
+          <td>
+            <img src="choked.png" alt="Rear Naked Choke">
+            <p>Rear Naked Choke</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="Facts">
+      <h2 class="section-title">Facts</h2>
+      <img src="neverbackdown.jpg" alt="Never Back Down">
+      <p>
+        During middle school, Ryan played Lacrosse, but after becoming a victim of bullying in his mid-teens, he became interested in martial arts.
+        Influenced by the movie <em>Never Back Down</em> and K1/MMA fighter Mirko “Crocop”, Aitken joined a local MMA club offering Kickboxing classes.
+        Although striking was his initial focus, he quickly became passionate about Jiu-Jitsu.
+      </p>
+    </div>
+
+    <div class="gym">
+      <table style="margin: 2rem auto; text-align: center;">
+        <tr>
+          <td><img src="10thplanetsolo.png" style="width: 250px; border-radius: 12px;"></td>
+          <td><img src="group.png" style="width: 400px; border-radius: 12px;"></td>
+        </tr>
+      </table>
+      <p style="text-align: center;">Currently affiliated with the 10th Planet Bath Martial Arts Gym.</p>
+    </div>
+
+    <div class="Record">
+      <h2>Ryan's Grappling Record</h2>
+      <img src="Records.png" class="Record-image" alt="Records">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Larrynoel. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
