@@ -1,0 +1,279 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Aitken | BJJ Grappler</title>
+  <link rel="shortcut icon" href="triangle.jpg" type="image/jpg" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      height: 650px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    header video.banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .header-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-text h1 {
+      color: #e50914;
+      font-size: 3rem;
+      letter-spacing: 30px;
+      margin: 0;
+      animation: fadeIn 2s ease;
+    }
+
+    .header-text h2 {
+      color: #f2c94c;
+      font-weight: 400;
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      animation: fadeInUp 2s ease;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #e50914;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #f2c94c;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      animation: fadeIn 2s ease;
+    }
+
+    .intro-text {
+      margin-top: 2rem;
+      animation: fadeInUp 2s ease;
+    }
+
+    .intro-text h3 {
+      color: #e50914;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .watch-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .watch-links img {
+      height: 90px;
+    }
+
+    .watch-links img[alt="IBJJF"] {
+      height: 100px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      background-color: #111;
+      color: #999;
+      margin-top: 3rem;
+    }
+
+    .audio-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .audio-toggle:hover {
+      background-color: #b0060f;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .header-text h1 {
+        font-size: 2.2rem;
+      }
+
+      nav a {
+        margin: 0 0.7rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <video class="banner" autoplay muted loop playsinline>
+      <source src="banner.mp4" type="video/mp4" />
+    </video>
+    <div class="header-text">
+      <h1>RYAN AITKEN</h1>
+      <h2>Submission Artist. Arm Breaker. Ankle Locker.</h2>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="achievement.html">Achievements</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <img src="pfp.jpg" alt="Ryan Aitken Grappling" />
+
+    <div class="intro-text">
+      <h3>Ossss</h3>
+      <p>Discover Ryan Aitken’s journey from humble beginnings to the biggest stages in Jiu-Jitsu. Fearless, technical, and relentless, every match is a war.</p>
+    </div>
+
+    <div class="intro-text">
+      <h3>About Brazilian Jiu-Jitsu</h3>
+      <p>Brazilian Jiu-Jitsu (BJJ) is a grappling-based martial art and self-defense system that emphasizes ground fighting and submission techniques like chokes and joint locks — which Ryan is terrifyingly good at.</p>
+    </div>
+
+    <div class="intro-text">
+      <h3>Watch Ryan Compete</h3>
+      <p>Catch all his matches on top grappling platforms:</p>
+      <div class="watch-links">
+        <a href="https://www.flograppling.com" target="_blank"><img src="flograppling.png" alt="FloGrappling" /></a>
+        <a href="https://www.ufcfightpass.com" target="_blank"><img src="ufcfightpass.png" alt="UFC Fight Pass" /></a>
+        <a href="https://ibjjf.com/" target="_blank"><img src="ibjjflogo.png" alt="IBJJF" /></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Larrynoel. All Rights Reserved.
+  </footer>
+
+  
+  <button class="audio-toggle" onclick="toggleAudio()">🔊 Sound On</button>
+
+
+  <audio id="bgMusic" src="cantstop.mp3" autoplay loop></audio>
+
+  <script>
+    const audio = document.getElementById("bgMusic");
+    const toggleBtn = document.querySelector(".audio-toggle");
+
+    
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        audio.volume = 0.5;
+        audio.play().catch(() => {
+          toggleBtn.textContent = "🔇 Sound Off";
+        });
+      }, 200);
+    });
+
+   
+    function toggleAudio() {
+      if (audio.muted || audio.paused) {
+        audio.muted = false;
+        audio.play();
+        toggleBtn.textContent = "🔊 Sound On";
+      } else {
+        audio.muted = true;
+        toggleBtn.textContent = "🔇 Sound Off";
+      }
+    }
+  </script>
+
+</body>
+</html>
